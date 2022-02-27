@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="font-sans">
+        <h1 class="text-5xl text-center py-8">Let's get some <span class="text-purple-700 font-medium">Mooooney</span> !!!</h1>
+    </header>
+    <main>
+                                 
+        <section class="main-section w-3/4 mx-auto grid grid-cols-3 gap-4">
+            <div class="deposit text-4xl bg-sky-400 p-8 text-white rounded">Deposit <br>$<span id="deposit-amount">00</span>
+                </div>
+            <div class="withdraw text-4xl bg-cyan-400 p-8 text-white rounded">withdraw <br> $ <span id="withdrawbtn">00</span></div>
+            <div class="balance text-4xl bg-yellow-400 p-8 text-white rounded">Balance <br>
+                $ <span id="aupded-valance">1240</span></div>
+        </section>
+                                <!-- deposit input -->
+
+        <section class="second-section w-3/4 mx-auto grid grid-cols-2 gap-4 mt-8">
+            <div class="deposit bg-pink-300 p-8 rounded">
+                <h1 class="text-3xl text-white">Plese Deposit</h1>
+            <input id="inupt-btn1" class="deposit p-1 w-3/4 rounded" type="number" name="" id="" placeholder="$ amount you want to deopsit"><br>
+
+            
+            <button onclick="depositBtn()" class="text-1xl text-white bg-orange-600 px-3 py-1.5 rounded mt-4">Deposit</button>
+            </div>
+            
+            
+            
+                      <!-- withdraw input -->
+
+            <div class="withdraw bg-green-400 p-8 rounded">
+                <h1 class="text-3xl text-white">Plese Deposit</h1>
+            <input id="inuput-btn2" class="input-withdraw p-1 w-3/4 rounded" type="number" name="" id="" placeholder="$ amount you want to withdraw"><br>
+            
+            <button id="withdraw-btn" class="text-1xl text-white bg-orange-600 px-3 py-1.5 rounded mt-4">Withdraw</button>
+            </div>  
+        </section>
+    </main>
+    <script src="trai.js"></script>
+</body>
+</html>
